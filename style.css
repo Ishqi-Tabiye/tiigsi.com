@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.container h1 {
+  margin: 2rem 1rem;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.course {
+  width: 30%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin: 0.5rem 0;
+}
+
+.course:hover {
+  transform: translateY(-12px);
+}
+
+.course .cover {
+  width: 100%;
+}
+
+.course .cover img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.course .textSection {
+  padding: 2rem; /*1rem = 16px */
+  text-align: center;
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .container h1 {
+    color: red;
+  }
+
+  .courses .course {
+    width: 45%;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  .courses .course {
+    width: 100%;
+  }
+}
+.odd{
+  width: 80px;
+}
+.even{
+  width: 90px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
